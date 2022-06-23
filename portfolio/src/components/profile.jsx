@@ -11,16 +11,14 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import WorkIcon from '@mui/icons-material/Work';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+// import { createMuiTheme } from '@mui/material';
+// const blueTheme = createMuiTheme({ palette: { primary: "skyblue" } })
+
 
 
 
 const Profile = () => {
-  const resData = {
-    name: "Ryan Santiago",
-    birthday: "November 5th 1992",
-    email: "RyeSan58@gmail.com",
-    phone: "3476819169"
-  }
+
   return (
     <div className='Profile_div'>
       <div >
@@ -84,9 +82,7 @@ const Profile = () => {
           </Timeline>
         </div>
         <br />
-        <Button varient="contained" color="secondary">
-          Button
-        </Button>
+        <Button variant="contained" className='buttons'>Contained</Button>
       </div>
     </div>
   )
