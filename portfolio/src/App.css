@@ -1,38 +1,82 @@
-.App {
+/* body{
+  background-image: url("./Photos/pexels-david-skyrius-2224861\(1\).jpg");
+} */
+
+.profile_image{
+  -webkit-clip-path: polygon(0 9%, 100% 0%, 100% 94%, 0% 100%);
+  clip-path: polygon(0% 9%, 100% 0%, 100% 94%, 0%, 100%);
+}
+
+.profile_image img{
+  width: 100%;
+}
+
+.caption{
+  color: #777;
+}
+
+.name{
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Profile_div{
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-time{
+  padding: 0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.timelineContent1{
+  padding-top: 7px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.time1{
+  min-height: 80px;
+}
+.main-time .MuitTimelineItem-root{
+  min-height: 0px;
+}
+.main-time .MuiTimelineItem-missingOppositeContent:before{
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.main-time .timeline_dot1{
+  color: black;
+  background-color: skyblue;
+  font-size: small;
+  padding: 10px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.main-time .tdot{
+  color: black;
+  border-color: skyblue;
+  font-size: small;
+  background-color: white;
+}
+
+.main-time .MuiTimelineConnector-root{
+  background-color: #eee;
+  min-height: 10px;
+}
+.main-time .MuiSvgIcon-root{
+  font-size: 20px;
+  color:  darkslategray;
+}
+.main-time .sep-pad{
+  padding-left: 16px !important;
+}
+
+.titleSpan{
+  font-weight: bold;
+}
+.profileContent{
+  font-size: smaller;
+}
+.ProData{
+  margin-top: -5px;
 }
