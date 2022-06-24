@@ -13,6 +13,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 // import { createMuiTheme } from '@mui/material';
 // const blueTheme = createMuiTheme({ palette: { primary: "skyblue" } })
+import DownloadIcon from '@mui/icons-material/Download';
 
 
 
@@ -55,6 +56,7 @@ const Profile = () => {
             <TimelineItem>
               <TimelineSeparator className='sep-pad'>
                 <TimelineDot className='tdot' />
+                <TimelineConnector />
               </TimelineSeparator  >
               <TimelineContent className="profileContent">
                 <span className='titleSpan'>Birthday:</span> 
@@ -64,6 +66,7 @@ const Profile = () => {
             <TimelineItem>
               <TimelineSeparator className='sep-pad'>
                 <TimelineDot className='tdot' />
+                <TimelineConnector />
               </TimelineSeparator  >
               <TimelineContent className="profileContent">
                 <span className='titleSpan'>Job:</span>
@@ -82,7 +85,7 @@ const Profile = () => {
           </Timeline>
         </div>
         <br />
-        <Button variant="contained" className='buttons'>Contained</Button>
+        <Button variant="contained" className='buttons'>Download <DownloadIcon/></Button>
       </div>
     </div>
   )

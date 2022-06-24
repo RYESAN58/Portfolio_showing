@@ -14,7 +14,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 function App() {
   return (
-    <Container>
+    <Container className='whole_margin'>
       <Grid container>
         <Grid item md={4} lg={3}>
           <Profile/>

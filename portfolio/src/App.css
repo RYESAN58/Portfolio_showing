@@ -85,4 +85,15 @@
 .buttons{
   background-color: skyblue !important;
   margin: 10px !important;
+  color: black !important;
+}
+
+.whole_margin{
+  margin-top: 60px;
+}
+@media(max-width: 991px){
+  .whole_margin{
+    margin-top: 30px;
+  }
+
 }
