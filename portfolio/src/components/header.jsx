@@ -1,32 +1,39 @@
 import React from 'react'
-
+import 'bootstrap/dist/css/bootstrap.css';
 import {
   Button,
   Nav,
   Navbar,
-  Navdropdown,
   Container,
-  NavbarBrand
+  NavbarBrand,
+  NavLink
 } from 'react-bootstrap'
 import HomeIcon from '@mui/icons-material/Home';
-import {Link, NavLink, withRouter} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
-const Header = () => {
+const Header = (props) => {
+  const pathName = props?.location?.pathname
   return (
     <div>
       <Navbar expand='lg' sticky='top' className='header'>
-        <Nav.Link as={NavLink} to='/'>
+        <Container>
+        <NavLink as={Link} to='/'>
           <NavbarBrand>
             <HomeIcon/>
           </NavbarBrand>
-        </Nav.Link>
-        <Navbar.Collapse>
+        </NavLink>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
-            <Nav.Link>
-
-            </Nav.Link>
+            <NavLink as={Link} to='/' className={pathName == '/' ? "header_link_active": "header_link"}>
+              Porfolio
+            </NavLink>
+            <NavLink as={Link} to='/resume' className={pathName == '/resume' ? "header_link_active": "header_link"}>
+              Resume
+            </NavLink>
           </Nav>
-        </Navbar.Collapse>
+          </Navbar.Collapse>
+          </Container>
       </Navbar>
     </div>
   )
