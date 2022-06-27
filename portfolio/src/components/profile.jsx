@@ -22,7 +22,7 @@ const Profile = () => {
 
   return (
     <div className='Profile_div'>
-      <div >
+      <div style={{backgroundColor: "#eee"}}>
         <Typography variant="h4" className="name">
           Ryan Santiago
         </Typography>

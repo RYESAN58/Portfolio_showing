@@ -37,7 +37,7 @@ const Header = (props) => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className='header_left'>
             <NavLink as={Link} to='/' onClick={ () => setDum(!dummy)} className={pathName == '/' ? "header_link_active": "header_link"} >
-              Porfolio
+              Portfolio
             </NavLink>
             <NavLink as={Link} to='/resume' onClick={ () => setDum(!dummy)} className={pathName == '/resume' ? "header_link_active": "header_link"}>
               Resume
