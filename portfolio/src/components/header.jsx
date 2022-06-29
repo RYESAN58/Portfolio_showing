@@ -44,13 +44,13 @@ const Header = (props) => {
             </NavLink>
           </Nav>
           <div className='header-right'>
-            <a href='https://github.com/RYESAN58'>
+            <a href='https://github.com/RYESAN58' target='_blank'>
               <GitHubIcon className='iconss'/>
             </a>
-            <a href='https://www.linkedin.com/in/ryan-santiago-4111a4166/'>
+            <a href='https://www.linkedin.com/in/ryan-santiago-4111a4166/' target='_blank'>
               <LinkedInIcon className='iconss'/>
             </a>
-            <a href='https://twitter.com/__worst'>
+            <a href='https://twitter.com/__worst' target='_blank'>
               <TwitterIcon className='iconss'/>
             </a>
             <Button variant="contained" className='buttons' style={{margin:'0px'}}>Hire Me!<TelegramIcon/></Button>
