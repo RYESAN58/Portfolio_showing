@@ -36,7 +36,7 @@ const Header = (props) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{marginRight: "6px"}}/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className='header_left'>
-            <NavLink as={Link} to='/' onClick={ () => setDum(!dummy)} className={pathName == '/' ? "header_link_active": "header_link"} >
+            <NavLink as={Link} to='/portfolio' onClick={ () => setDum(!dummy)} className={pathName == '/portfolio' ? "header_link_active": "header_link"} >
               Portfolio
             </NavLink>
             <NavLink as={Link} to='/resume' onClick={ () => setDum(!dummy)} className={pathName == '/resume' ? "header_link_active": "header_link"}>

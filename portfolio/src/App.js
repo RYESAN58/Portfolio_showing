@@ -9,6 +9,7 @@ import Porfolio from './components/porfolio';
 import Footer from './components/footer';
 import Resume from './components/resume';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import  Index  from './components';
 
 
 
@@ -22,10 +23,13 @@ function App() {
           <Grid item xs>
             <BrowserRouter>
             <Header/>
-              <Routes>
-                <Route path='/' element={<Porfolio/>}/>
-                <Route path='/resume' element={<Resume/>}/>
-              </Routes>
+              <div className='main-content'>
+                <Routes>
+                  <Route path='/' element={<Index/>}/>
+                  <Route path='/portfolio' element={<Porfolio/>}/>
+                  <Route path='/resume' element={<Resume/>}/>
+                </Routes>
+              </div>
             </BrowserRouter>
             <Footer/>
           </Grid>
