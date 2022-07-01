@@ -39,7 +39,7 @@ const Profile = () => {
             <TimelineItem className='time1'>
               <TimelineSeparator>
                 <TimelineDot className='timeline_dot1'> {<AccountCircleIcon/>}</TimelineDot>
-                <TimelineConnector />
+                <TimelineConnector className='Connect' />
               </TimelineSeparator>
               <TimelineContent>
               </TimelineContent>
@@ -47,7 +47,7 @@ const Profile = () => {
             <TimelineItem>
               <TimelineSeparator className='sep-pad'>
                 <TimelineDot className='tdot'/>
-                <TimelineConnector />
+                <TimelineConnector className='Connect' />
               </TimelineSeparator>
               <TimelineContent className="profileContent">
                 <span className='titleSpan'>Name:</span> <p className='ProData'>Ryan Santiago</p>
@@ -56,7 +56,7 @@ const Profile = () => {
             <TimelineItem>
               <TimelineSeparator className='sep-pad'>
                 <TimelineDot className='tdot' />
-                <TimelineConnector />
+                <TimelineConnector className='Connect' />
               </TimelineSeparator  >
               <TimelineContent className="profileContent">
                 <span className='titleSpan'>Birthday:</span> 
@@ -66,7 +66,7 @@ const Profile = () => {
             <TimelineItem>
               <TimelineSeparator className='sep-pad'>
                 <TimelineDot className='tdot' />
-                <TimelineConnector />
+                <TimelineConnector className='Connect' />
               </TimelineSeparator  >
               <TimelineContent className="profileContent">
                 <span className='titleSpan'>Job:</span>

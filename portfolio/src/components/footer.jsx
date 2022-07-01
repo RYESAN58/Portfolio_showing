@@ -1,6 +1,6 @@
 import React from 'react'
 import Typography from '@mui/material/Typography';
-
+import logo from '../logo.svg';
 
 const Footer = () => {
   return (
@@ -14,7 +14,9 @@ const Footer = () => {
         <Typography className="footer_copyrights">
           Designed and Devoloped by Ryan Santiago
           <br/>
-          inspired by <a href='https://themeforest.net/search/material%20portfolio' target='_blank'> Travonline</a>.
+          Created using
+          <a href='https://reactjs.org/' target="_blank"><img src={logo} className="app-logo" alt='logo' style={{height: "17px"}}/></a>,
+          Inspired by <a href='https://themeforest.net/search/material%20portfolio' target='_blank'> Travonline</a>.
         </Typography>
       </div>
     </div>

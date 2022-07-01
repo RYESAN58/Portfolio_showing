@@ -63,7 +63,7 @@ body{
 }
 
 .main-time .MuiTimelineConnector-root{
-  background-color: #eee;
+  background-color: rgb(185, 185, 185);
   min-height: 10px;
 }
 .main-time .MuiSvgIcon-root{
@@ -75,6 +75,9 @@ body{
 }
 
 .titleSpan{
+  font-weight: bold;
+}
+.ressy{
   font-weight: bold;
 }
 .profileContent{
@@ -207,4 +210,42 @@ body{
     width: 99%;
     margin: auto;
   }
+}
+
+.Connect{
+  background-color: rgb(185, 185, 185);
+}
+
+.hover:hover{
+  cursor: pointer;
+}
+
+.grid_title{
+  position: relative;
+  display: inline-block;
+} 
+.grid_title .section_text {
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  margin: 0;
+}
+
+.grid_title span {
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  bottom: 0;
+  opacity: 0.4;
+  left: 0;
+  background-color: skyblue;
+}
+.mb-30{
+  margin-bottom: 30px !important;
+}
+
+.me{
+  color: darkslategray;
+  line-height: 22px !important;
+  white-space: pre-line;
 }

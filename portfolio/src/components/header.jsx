@@ -28,7 +28,7 @@ const Header = (props) => {
   console.log(pathName)
   return (
       <Navbar expand='lg' sticky='top' className='header'>
-        <NavLink as={Link} to='/' className='header_home'>
+        <NavLink as={Link} to='/' className='header_home' onClick={() => setDum(!dummy)}>
           <NavbarBrand >
             <HomeIcon className='ICON'/>
           </NavbarBrand>
