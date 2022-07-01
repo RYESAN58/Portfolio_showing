@@ -31,7 +31,7 @@ const Profile = () => {
         </Typography >
       </div>
       <figure className="profile_image">
-        <img src={require('../Photos/ME.jpg')} />
+        <img src={require('../Photos/graduation.jpg')} />
       </figure>
       <div>
         <div style={{marginLeft:"45px", marginTop: "-50px"}}>

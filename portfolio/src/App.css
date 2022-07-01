@@ -79,7 +79,9 @@ body{
 }
 .ressy{
   font-weight: bold;
+  margin-top: -7px;
 }
+
 .profileContent{
   font-size: smaller;
 }
@@ -248,4 +250,10 @@ body{
   color: darkslategray;
   line-height: 22px !important;
   white-space: pre-line;
+}
+
+.knicks{
+  display: flex;
+  align-items: center;
+
 }
