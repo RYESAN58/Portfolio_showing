@@ -43,14 +43,14 @@ const Index = () => {
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={3} className='service'> 
-            <Paper elevation={3} style={{padding:"5px"}} className="service_paper">
-              <AlarmIcon className='service_icon'/>
-              <Typography variant="h6" className='service_title'>
-                Fast Delivery 
-              </Typography>
-              <Typography variant="body2" className='service_desc'>
-                I deliver full proof solutions in timley manner. 
-              </Typography>
+              <Paper elevation={3} style={{padding:"5px"}} className="service_paper">
+                <AlarmIcon className='service_icon'/>
+                <Typography variant="h6" className='service_title'>
+                  Fast Delivery 
+                </Typography>
+                <Typography variant="body2" className='service_desc'>
+                  I deliver full proof solutions in timley manner. 
+                </Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={3} className='service'>
@@ -62,7 +62,7 @@ const Index = () => {
                 <Typography variant="body2" className='service_desc'>
                   Will offer support to partners, clients and teamates.
                 </Typography>
-                </Paper>
+              </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={3} className='service'> 
               <Paper elevation={3} style={{padding:"5px"}} className="service_paper">
@@ -73,7 +73,7 @@ const Index = () => {
                 <Typography variant="body2" className='service_desc'>
                   Expert at understanding the needs of clients and creating a brand that fits.
                 </Typography>
-                </Paper>
+              </Paper>
             </Grid>
           </Grid>
         </Grid>

@@ -282,6 +282,10 @@ body{
   font-weight: 300 !important;
   color: darkslategray !important;
 }
+.service_paper{
+  border-radius: 8px;
+  padding: 20px;
+}
 
 @media(min-width: 630px){
   .service_paper{
@@ -305,4 +309,21 @@ body{
   .service_paper{
     min-height: 200px;
   }
+}
+
+.skill{
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.skill .skills_title{
+
+}
+
+.skill .skills_desc{
+
+}
+
+.skill .skills_desc .skill_dot{
+
 }
