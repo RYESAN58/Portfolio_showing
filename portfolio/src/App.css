@@ -257,3 +257,52 @@ body{
   align-items: center;
 
 }
+
+.service{
+  height: 100%;
+  text-align: center;
+}
+
+.service .service_title {
+  line-height: 35px !important;
+  text-align: center;
+  font-weight: 500;
+}
+
+.service .service_desc{
+  color: #989898;
+  border-color: skyblue;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.service_icon{
+  font-size: 46px !important;
+  margin-left: 0 !important;
+  font-weight: 300 !important;
+  color: darkslategray !important;
+}
+
+@media(min-width: 630px){
+  .service_paper{
+    min-height: 130px;
+  }
+}
+
+@media(min-width: 870px){
+  .service_paper{
+    min-height: 170px;
+  }
+}
+
+@media(min-width: 991px){
+  .service_paper{
+    min-height: 240px;
+  }
+}
+
+@media(min-width: 1100px){
+  .service_paper{
+    min-height: 200px;
+  }
+}
