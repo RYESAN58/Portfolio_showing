@@ -110,38 +110,90 @@ const Resume = () => {
         <span style={{width:"45px"}}></span>
         <h5 className='section_text'> Skills </h5>
       </Grid>
-      <Grid container>
+      <Grid container spacing={3} justify="space-around">
         <Grid item  xs={12} sm={6} md={3}>
-          <Paper elevation={0} className='skill'>
+          <Paper elevation={3} className='skill '>
             <Typography variant='h6' className='skills_title'>
               FRONT-END
             </Typography>
             <Typography variant='body2' className='skills_desc'>
               <TimelineDot variant={'outlined'} className='skill_dot'/>
-              HTML
+              ReactJS
+            </Typography>
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              JavaScript
+            </Typography>
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              Bootstrap
+            </Typography>
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              Material UI
             </Typography>
           </Paper>
         </Grid>
         <Grid item  xs={12} sm={6} md={3}>
-          <Paper elevation={0}>
+          <Paper elevation={3} className='skill'>
             <Typography variant='h6' className='skills_title'>
               BACK-END
             </Typography>
-          </Paper>
-        </Grid>
-        
-        <Grid item  xs={12} sm={6} md={3}>
-          <Paper elevation={0}>
-            <Typography variant='h6' className='skills_title'>
-              DATABASES
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              Python
+            </Typography>
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              Flask
+            </Typography>
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              NodeJS
             </Typography>
           </Paper>
         </Grid>
         
         <Grid item  xs={12} sm={6} md={3}>
-          <Paper elevation={0}>
+          <Paper elevation={3} className='skill'>
+            <Typography variant='h6' className='skills_title'>
+              DATABASES
+            </Typography>
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              MySQL
+            </Typography>
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              MongoDB
+            </Typography>
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              SQLlite
+            </Typography>
+          </Paper>
+        </Grid>
+        
+        <Grid item  xs={12} sm={6} md={3}>
+          <Paper elevation={3} className='skill'>
             <Typography variant='h6' className='skills_title'>
               RESORUCES
+            </Typography>
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              Jinja
+            </Typography>
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              Postman
+            </Typography>
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              Git
+            </Typography>
+            <Typography variant='body2' className='skills_desc'>
+              <TimelineDot variant={'outlined'} className='skill_dot'/>
+              GitHub
             </Typography>
           </Paper>
         </Grid>

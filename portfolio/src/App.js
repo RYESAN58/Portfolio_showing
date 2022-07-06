@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import Saveicon from '@mui/icons-material/Save';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid'
 import Profile from './components/profile';
@@ -10,6 +8,7 @@ import Footer from './components/footer';
 import Resume from './components/resume';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import  Index  from './components';
+import Contact from './components/contact';
 
 
 
@@ -28,6 +27,7 @@ function App() {
                   <Route path='/' element={<Index/>}/>
                   <Route path='/portfolio' element={<Porfolio/>}/>
                   <Route path='/resume' element={<Resume/>}/>
+                  <Route path='con' element={<Contact/>}/>
                 </Routes>
               </div>
             </BrowserRouter>
