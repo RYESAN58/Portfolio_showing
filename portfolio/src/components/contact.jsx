@@ -61,42 +61,54 @@ const Contact = () => {
   }
   
   return (
-    <div >
-      <Grid item className='grid_title mb-30' xs={12}>
-        <span style={{width:"70px"}}></span>
-        <h5 className='section_text'> Contact </h5>
+    <Grid >
+      <Grid item lg={6}>
+        <Grid item className='grid_title mb-30' xs={12}>
+          <span style={{width:"70px"}}></span>
+          <h5 className='section_text'> Contact </h5>
+        </Grid>
+        <Box
+          component="form"
+          noValidate
+          autoComplete="off"
+          ref={form}
+          onSubmit={submit}
+        >
+          <Grid  container spacing={2}>
+            <Grid item xs={12} sm={6}>
+              {
+                nameError ?
+                <p style={{color:"red"}}>{nameError}</p>:
+                ""
+              }
+              <TextField id="outlined-basic" label="Name" variant="outlined" onChange={handleName} name='name'/>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              {
+                emailError ?
+                <p style={{color:"red"}}>{emailError}</p>:
+                ""
+              }
+              <TextField type="email" label="Your email address" varaint= 'outlined' onChange={handleEmail} name='email'/>
+            </Grid>
+            <Grid xs={11} style={{marginTop:"20px", marginLeft:"15px"}} >
+              <TextField  type= 'text' variant= 'outlined' label="Message me" onChange={handleMessage} name='message'  fullWidth multiline rows={4}/>
+            </Grid>
+            <Grid xs={11} style={{marginTop:"20px"}}>
+              <Button variant='contained' color='primary' type='submit' className='ml' style={{marginLeft:"7px", display:`${display}`}}>Send Message</Button>
+            </Grid>
+          {
+            emailSent ?
+            <div style={{marginLeft:"7px"}}>Thank you for your message, I will be in touch in no time!</div>:
+            ''
+          }
+          </Grid>
+          <Grid item>
+            HELLO
+          </Grid>
+        </Box>
       </Grid>
-      <Box
-        component="form"
-        sx={{
-          '& > :not(style)': { m: 1, width: '25ch' },
-        }}
-        noValidate
-        autoComplete="off"
-        ref={form}
-        onSubmit={submit}
-      >
-        {
-          nameError ?
-          <p style={{color:"red"}}>{nameError}</p>:
-          ""
-        }
-        <TextField id="outlined-basic" label="Name" variant="outlined" onChange={handleName} name='name'/>
-        {
-          emailError ?
-          <p style={{color:"red"}}>{emailError}</p>:
-          ""
-        }
-        <TextField type="email" label="Your email address" varaint= 'outlined' onChange={handleEmail} name='email'/>
-        <TextField  type= 'text' variant= 'outlined' label="Message me" onChange={handleMessage} name='message' />
-        <Button variant='contained' color='primary' type='submit' className='ml' style={{marginLeft:"7px", display:`${display}`}}>Send Message</Button>
-      </Box>
-        {
-          emailSent ?
-          <div style={{marginLeft:"7px"}}>Thank you for your message, I will be in touch in no time!</div>:
-          ''
-        }
-    </div>
+    </Grid>
   );
 };
 
