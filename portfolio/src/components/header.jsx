@@ -42,6 +42,9 @@ const Header = (props) => {
             <NavLink as={Link} to='/resume' onClick={ () => setDum(!dummy)} className={pathName == '/resume' ? "header_link_active": "header_link"}>
               Resume
             </NavLink>
+            <NavLink as={Link} to='/contact' onClick={ () => setDum(!dummy)} className={pathName == '/contact' ? "header_link_active": "header_link"}>
+              Contact
+            </NavLink>
           </Nav>
           <div className='header-right'>
             <a href='https://github.com/RYESAN58' target='_blank'>

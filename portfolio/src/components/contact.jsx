@@ -18,6 +18,7 @@ const Contact = () => {
   const [display, setDisplay] = useState('')
   const form = useRef();
   const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const [validator, setValiditor] = useState('')
 
 
   const handleName = (e) => {
@@ -47,6 +48,12 @@ const Contact = () => {
   }
 
   const submit = (e) => {
+    if(!name || !email){
+      setValiditor("Must Fill out form")
+      return;
+    }else if(nameError || emailError){
+      return
+    }
     e.preventDefault()
     console.log()
     emailjs.sendForm('service_gqmb9aj', 'template_u6oknll', form.current, 'ttrUFwApjoTD2Kkcu')
@@ -56,12 +63,13 @@ const Contact = () => {
           console.log(error.text);
       });
       console.log(e.target)
+    setValiditor('')
     setEmailSent(!emailSent)
     e.target.reset()
   }
   
   return (
-    <Grid >
+    <Grid container >
       <Grid item lg={6}>
         <Grid item className='grid_title mb-30' xs={12}>
           <span style={{width:"70px"}}></span>
@@ -95,16 +103,18 @@ const Contact = () => {
               <TextField  type= 'text' variant= 'outlined' label="Message me" onChange={handleMessage} name='message'  fullWidth multiline rows={4}/>
             </Grid>
             <Grid xs={11} style={{marginTop:"20px"}}>
-              <Button variant='contained' color='primary' type='submit' className='ml' style={{marginLeft:"7px", display:`${display}`}}>Send Message</Button>
+              <Button variant='contained' color='primary' type='submit' className='ml' style={{marginLeft:"17px", display:`${display}`}}>Send Message</Button>
             </Grid>
           {
             emailSent ?
             <div style={{marginLeft:"7px"}}>Thank you for your message, I will be in touch in no time!</div>:
             ''
           }
-          </Grid>
-          <Grid item>
-            HELLO
+          {
+            validator ?
+            <p>{validator}</p>:
+            ""
+          }
           </Grid>
         </Box>
       </Grid>
