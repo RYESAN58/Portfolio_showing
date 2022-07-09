@@ -7,6 +7,9 @@ import emailjs from 'emailjs-com'
 import "../App.css"
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 
 const Contact = () => {
@@ -119,13 +122,13 @@ const Contact = () => {
           </Grid>
         </Box>
       </Grid>
-      <Grid container lg={5} style={{marginLeft:"10px"}} className="Address-con">
+      <Grid container lg={5}  className="Address-con">
         <Grid item className='grid_title mb-30'xs={12} style={{height:"22px"}}>
           <span style={{width:"105px"}}></span>
           <h5 className='section_text'> Contact Info </h5>
         </Grid>
         <Grid item xs={12}>
-          <Grid container style={{marginBottom:"500px"}} spacing={5}>
+          <Grid container spacing={5}>
             <Grid item>
               <Typography className='contact_info'>
                 <span className='Types'>Location:</span> New York City
@@ -136,10 +139,38 @@ const Contact = () => {
                 <span className='types'>Phone:</span> +13476819169
               </Typography>
             </Grid>
-            <Grid item>
+            <Grid item >
               <Typography className='contact_info'>
                 <span className='types'>Email:</span> Ryesan58@gmail.com
               </Typography>
+            </Grid>
+            <Grid item lg={12}>
+              <Typography className='contact_info'>
+                <span className='types'>Job:</span> Student
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid container >
+                <Grid>
+                  <div className='header-right'>
+                    <a href='https://github.com/RYESAN58' target='_blank'>
+                      <GitHubIcon className='iconss'/>
+                    </a>
+                  </div>
+                </Grid>
+                <Grid>
+                  <div className='header-right'>
+                    <a href='https://www.linkedin.com/in/ryan-santiago-4111a4166/' target='_blank'>
+                      <LinkedInIcon className='iconss'/>
+                    </a>
+                  </div>
+                </Grid>
+                <Grid>
+                  <a href='https://twitter.com/__worst' target='_blank'>
+                    <TwitterIcon className='iconss'/>
+                  </a>
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
