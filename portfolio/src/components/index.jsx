@@ -11,11 +11,11 @@ import Paper from '@mui/material/Paper';
 const Index = () => {
   return (
     <Grid className="section">
-      <Grid item className='grid_title mb-30' xs={12}>
+      <Grid className='grid_title mb-30'>
         <span></span>
         <h5 className='section_text'> About Me </h5>
       </Grid>
-      <Grid item xs={12}>
+      <Grid>
         <Typography variant='body2' className='me'>
         Being a Software Engineer is more than just programming. It's a chance to help other people through the power of technology. In my tech career so far I've always managed to power people through their technical problems. In doing so, I developed a thrill and satisfcation with solving problems and wanting to learn more ways I can build on this career. Having this as a career gives us engineers the power to influence other peoples' lives. I strive to be apart of something bigger than myself where I can help develop something that helps thousands of people.
         <br/>
