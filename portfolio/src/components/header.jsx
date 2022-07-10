@@ -23,9 +23,6 @@ const Header = (props) => {
   const [dummy, setDum] = useState(true)
 
   useEffect(() => setPath(window.location.pathname), [dummy])
-
-
-  console.log(pathName)
   return (
       <Navbar expand='lg' sticky='top' className='header'>
         <NavLink as={Link} to='/' className='header_home' onClick={() => setDum(!dummy)}>
