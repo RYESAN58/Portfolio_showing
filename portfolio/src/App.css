@@ -369,3 +369,21 @@ body{
 .customCard_title{
   font-weight: 500;
 }
+.projectD{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectDPhoto{
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.projectDDescription{
+  margin-top: 10px !important;
+}
+.projectDActions{
+  justify-content: center;
+  margin-bottom: 10px;
+}
