@@ -13,19 +13,23 @@ import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
 import DialogTitle from '@mui/material/DialogTitle';
+import GitHub from '@mui/icons-material/GitHub';
+import LanguageIcon from '@mui/icons-material/Language';
+import { useNavigate } from 'react-router-dom';
+
 
 const Porfolio = () => {
   const [tabValue, setTabValue] = useState('All')
   const [open, setOpen]= useState(false)
-  const ProjectDialog = () => {
+  const [open2, setOpen2]= useState(false)
 
-  }
+
 
 
   return (
     <Grid className="section" container>
-      <Grid item lg={12} className='grid_title mb-30'>
-        <span style={{width:"76px"}}></span>
+      <Grid item xs={12} className='grid_title mb-30'>
+        <span style={{width:'75px'}}></span>
         <h5 className='section_text'> Portfolio </h5>
       </Grid>
       <Grid item>
@@ -55,7 +59,7 @@ const Porfolio = () => {
                           PhtotCred
                         </Typography>
                         <Typography className='customCard_desc' variant='body2'>
-                          Description
+                          An app to share photos with everyone!
                         </Typography>
                       </CardContent>
                     </CardActionArea>
@@ -66,9 +70,9 @@ const Porfolio = () => {
               }
               {
                 tabValue == "Flask" || tabValue == "All" ?
-                <Grid item>
+                <Grid item >
                   <Grow in timeout={1000}>
-                    <Card onClick={()=>setOpen(true)}>
+                    <Card onClick={()=>setOpen2(true)}>
                       <CardActionArea>
                         <CardMedia className='customCard'  component="img" image={require('../Photos/Hugo.png')} title='PhotoCred' height="100"/>
                         <CardContent>
@@ -76,7 +80,7 @@ const Porfolio = () => {
                             JUGO
                           </Typography>
                           <Typography className='customCard_desc' variant='body2'>
-                            Description
+                            An ecommerce site to Buy merchindise
                           </Typography>
                         </CardContent>
                       </CardActionArea>
@@ -103,17 +107,42 @@ const Porfolio = () => {
               </Grow>
             </Grid> */}
           </Grid>
-          <button >CLICK</button>
         </Grid>
         <div>
           <Dialog open={open} onClose={()=> setOpen(false)}>
-            <DialogTitle></DialogTitle>
-            <img/>
+            <DialogTitle>PhotoCred MERN app</DialogTitle>
+            <a href="https://gentle-speculoos-8d25ac.netlify.app/" target='_blank'>
+              <img src={require('../Photos/photocred.png')} className='hover' style={{height:'250px'}}/>
+            </a>
             <DialogContent>
-              Description
+              With this project I created an app where users can create events where anyone can post pictures of event. this app was created using REACT, Express, MongoDB, Node.JS. With this app I really wanted to show how I can make a complex backend as well as using third party pps like aws's s3 and I also used Google Maps api so users can see the exact location's of the event. 
             </DialogContent>
             <DialogActions>
-              All Actions
+              <a href="https://github.com/RYESAN58/P-A-Solo-project" target="_blank">
+                <GitHub className='iconss' />
+              </a>
+              <a href="https://gentle-speculoos-8d25ac.netlify.app/" target="_blank">
+                <LanguageIcon className='iconss'/>
+              </a>
+            </DialogActions>
+          </Dialog>
+        </div>
+        <div>
+          <Dialog open={open2} onClose={()=> setOpen2(false)}>
+            <DialogTitle>Hugo Flask app</DialogTitle>
+            <img src={require('../Photos/Hugo.png')} className='hover' />
+            <DialogContent>
+              <Typography>
+                Jugo Ecommerce app using Flask backend. Using flask we made an app where user's can signup and buy Merch with this app we really wanted to display our full stack abilities with front end design and back end logic. We used a MySQL where we hand wrote the codes. 
+              </Typography>
+            </DialogContent>
+            <DialogActions>
+              <a href="https://github.com/eriVitale/groupProject" target="_blank">
+                <GitHub className='iconss' />
+              </a>
+              <a href="http://34.230.61.245/" target="_blank">
+                <LanguageIcon className='iconss'/>
+              </a>
             </DialogActions>
           </Dialog>
         </div>

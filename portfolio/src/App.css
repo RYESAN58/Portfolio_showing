@@ -361,3 +361,11 @@ body{
     margin-left: 10px;
   }
 }
+.customCard_desc{
+  color: gray;
+  font-weight: 300;
+}
+
+.customCard_title{
+  font-weight: 500;
+}
