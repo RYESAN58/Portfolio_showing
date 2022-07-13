@@ -10,6 +10,13 @@ import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+
 
 
 
@@ -198,6 +205,67 @@ const Resume = () => {
           </Paper>
         </Grid>
       </Grid>
+      {/* <Grid item xs={12} style={{marginTop:'10px'}}>
+        <Grid container>
+          <Grid item xs={12}>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>
+                  <h5 className='section_text'>Techinichal Achievements</h5>
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <ImageList sx={{ width: "auto", height: 450 }} cols={3} rowHeight={164}>
+                    <ImageListItem>
+                      <img
+                        src={require('../Photos/codio.png')}
+                        srcSet={require('../Photos/codio.png')}
+                        alt={''}
+                        loading="lazy"
+                        />
+                    </ImageListItem>
+                    <ImageListItem>
+                      <img
+                        src={require('../Photos/CSS-UM.png')}
+                        srcSet={require('../Photos/CSS-UM.png')}
+                        alt={''}
+                        loading="lazy"
+                        />
+                    </ImageListItem>
+                  <ImageListItem>
+                    <img
+                      src={require('../Photos/DOJO.png')}
+                      srcSet={require('../Photos/DOJO.png')}
+                      alt={''}
+                      loading="lazy"
+                      />
+                  </ImageListItem>
+                  <ImageListItem>
+                    <img
+                      src={require('../Photos/flask_course.png')}
+                      srcSet={require('../Photos/flask_course.png')}
+                      alt={''}
+                      loading="lazy"
+                      />
+                  </ImageListItem>
+                  <ImageListItem>
+                    <img
+                      src={require('../Photos/git.png')}
+                      srcSet={require('../Photos/git.png')}
+                      alt={''}
+                      loading="lazy"
+                      />
+                  </ImageListItem>
+                </ImageList>
+              </AccordionDetails>
+            </Accordion>
+          </Grid>
+        </Grid>
+      </Grid> */}
     </Grid>
   )
 }
