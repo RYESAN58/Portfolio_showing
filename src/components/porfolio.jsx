@@ -128,7 +128,7 @@ const Porfolio = () => {
           </Dialog>
         </div>
         <div>
-          <Dialog open={open2} onClose={()=> setOpen2(false)} className='projectD'>
+          <Dialog open={open2} onClose={()=> setOpen2(false)} className='projectD projectDPhoto'>
             <DialogTitle>Hugo Flask app</DialogTitle>
             <img src={require('../Photos/Hugo.png')} className='hover' />
             <DialogContent>
