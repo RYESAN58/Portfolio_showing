@@ -128,9 +128,9 @@ const Porfolio = () => {
           </Dialog>
         </div>
         <div>
-          <Dialog open={open2} onClose={()=> setOpen2(false)} className='projectD projectDPhoto'>
+          <Dialog open={open2} onClose={()=> setOpen2(false)} className='projectD'>
             <DialogTitle>Hugo Flask app</DialogTitle>
-            <img src={require('../Photos/Hugo.png')} className='hover' />
+            <img src={require('../Photos/Hugo.png')} className='hover projectDPhoto' />
             <DialogContent>
               <Typography className='projectDDescription'>
                 Jugo Ecommerce app using Flask backend. Using flask we made an app where user's can signup and buy Merch with this app we really wanted to display our full stack abilities with front end design and back end logic. We used a MySQL where we hand wrote the codes. 
