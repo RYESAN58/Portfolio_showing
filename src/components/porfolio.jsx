@@ -22,6 +22,7 @@ const Porfolio = () => {
   const [tabValue, setTabValue] = useState('All')
   const [open, setOpen]= useState(false)
   const [open2, setOpen2]= useState(false)
+  const [open3, setOpen3]= useState(false)
 
 
 
@@ -89,6 +90,27 @@ const Porfolio = () => {
                 </Grid>:
                 ""
                 }
+                {
+                tabValue == "Flask" || tabValue == "All" ?
+                <Grid item >
+                  <Grow in timeout={1000}>
+                    <Card onClick={()=>setOpen3(true)}>
+                      <CardActionArea>
+                        <CardMedia className='customCard'  component="img" image={require('../Photos/TVSHOW.png')} title='PhotoCred' height="100"/>
+                        <CardContent>
+                          <Typography className='customCard_title'>
+                            Tv Show Rater
+                          </Typography>
+                          <Typography className='customCard_desc' variant='body2'>
+                            An app to add/like TV shows
+                          </Typography>
+                        </CardContent>
+                      </CardActionArea>
+                    </Card>
+                  </Grow>
+                </Grid>:
+                ""
+                }
             {/* <Grid item>
               <Grow in timeout={1000}>
                 <Card>
@@ -130,7 +152,9 @@ const Porfolio = () => {
         <div>
           <Dialog open={open2} onClose={()=> setOpen2(false)} className='projectD'>
             <DialogTitle>Hugo Flask app</DialogTitle>
-            <img src={require('../Photos/Hugo.png')} className='hover projectDPhoto' />
+            <a href="http://34.230.61.245/" target='_blank'>
+              <img src={require('../Photos/Hugo.png')} className='hover projectDPhoto' style={{height:'250px'}}/>
+            </a>
             <DialogContent>
               <Typography className='projectDDescription'>
                 Jugo Ecommerce app using Flask backend. Using flask we made an app where user's can signup and buy Merch with this app we really wanted to display our full stack abilities with front end design and back end logic. We used a MySQL where we hand wrote the codes. 
@@ -141,6 +165,27 @@ const Porfolio = () => {
                 <GitHub className='iconss' />
               </a>
               <a href="http://34.230.61.245/" target="_blank">
+                <LanguageIcon className='iconss'/>
+              </a>
+            </DialogActions>
+          </Dialog>
+        </div>
+        <div>
+          <Dialog open={open3} onClose={()=> setOpen3(false)} className='projectD'>
+            <DialogTitle>TV Shows</DialogTitle>
+            <a href="http://127.0.0.1:5000/" target='_blank'>
+              <img src={require('../Photos/TVSHOW.png')} className='hover projectDPhoto' style={{height:'250px'}}/>
+            </a>
+            <DialogContent>
+              <Typography className='projectDDescription'>
+                Using flask I created a CRUD TV show app where users cann add shows and Like the shows added by users with this I wanted to display my very unique SQL skills by using many to many relationships as a way to Like shows added by specific users.
+              </Typography>
+            </DialogContent>
+            <DialogActions className='projectDActions'>
+              <a href="https://github.com/RYESAN58/Black_belt" target="_blank">
+                <GitHub className='iconss' />
+              </a>
+              <a href="http://127.0.0.1:5000/" target="_blank">
                 <LanguageIcon className='iconss'/>
               </a>
             </DialogActions>
