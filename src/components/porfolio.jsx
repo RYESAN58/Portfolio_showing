@@ -60,7 +60,7 @@ const Porfolio = () => {
                           PhtotCred
                         </Typography>
                         <Typography className='customCard_desc' variant='body2'>
-                          An app to share photos with everyone!
+                          An app to share photos with everyone
                         </Typography>
                       </CardContent>
                     </CardActionArea>
@@ -102,7 +102,7 @@ const Porfolio = () => {
                             Tv Show Rater
                           </Typography>
                           <Typography className='customCard_desc' variant='body2'>
-                            An app to add/like TV shows
+                            An app to add/like favorite TV shows
                           </Typography>
                         </CardContent>
                       </CardActionArea>
@@ -178,7 +178,7 @@ const Porfolio = () => {
             </a>
             <DialogContent>
               <Typography className='projectDDescription'>
-                Using flask I created a CRUD TV show app where users cann add shows and Like the shows added by users with this I wanted to display my very unique SQL skills by using many to many relationships as a way to Like shows added by specific users.
+                Using flask I created a CRUD TV show app where users can add, like shows. With this I wanted to display my very unique SQL skills by using many to many relationships as a way to Like shows added by specific users.
               </Typography>
             </DialogContent>
             <DialogActions className='projectDActions'>
