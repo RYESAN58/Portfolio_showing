@@ -173,7 +173,7 @@ const Porfolio = () => {
         <div>
           <Dialog open={open3} onClose={()=> setOpen3(false)} className='projectD'>
             <DialogTitle>TV Shows</DialogTitle>
-            <a href="http://127.0.0.1:5000/" target='_blank'>
+            <a href="http://54.210.47.144/" target='_blank'>
               <img src={require('../Photos/TVSHOW.png')} className='hover projectDPhoto' style={{height:'250px'}}/>
             </a>
             <DialogContent>
@@ -185,7 +185,7 @@ const Porfolio = () => {
               <a href="https://github.com/RYESAN58/Black_belt" target="_blank">
                 <GitHub className='iconss' />
               </a>
-              <a href="http://127.0.0.1:5000/" target="_blank">
+              <a href="http://54.210.47.144/" target="_blank">
                 <LanguageIcon className='iconss'/>
               </a>
             </DialogActions>
