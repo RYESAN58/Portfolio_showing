@@ -94,7 +94,7 @@ const Porfolio = () => {
                 tabValue == "Flask" || tabValue == "All" ?
                 <Grid item >
                   <Grow in timeout={1000}>
-                    <Card onClick={()=>setOpen3(true)}>
+                    <Card onClick={()=>setOpen3(true)} style={{minWidth:"272.35px"}}>
                       <CardActionArea>
                         <CardMedia className='customCard'  component="img" image={require('../Photos/TVSHOW.png')} title='PhotoCred' height="100"/>
                         <CardContent>
