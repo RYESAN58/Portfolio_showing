@@ -184,7 +184,7 @@ const Resume = () => {
         <Grid item  xs={12} sm={6} md={3}>
           <Paper elevation={3} className='skill'>
             <Typography variant='h6' className='skills_title'>
-              RESORUCES
+              RESOURCES
             </Typography>
             <Typography variant='body2' className='skills_desc'>
               <TimelineDot variant={'outlined'} className='skill_dot'/>
