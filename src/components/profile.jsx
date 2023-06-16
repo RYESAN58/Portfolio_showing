@@ -60,7 +60,7 @@ const Profile = () => {
               </TimelineSeparator  >
               <TimelineContent className="profileContent">
                 <span className='titleSpan'>Birthday:</span> 
-                <p className='ProData'>November 05 1992</p>
+                <p className='ProData'>November 05</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>

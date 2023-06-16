@@ -94,7 +94,7 @@ const Resume = () => {
             <TimelineContent className="profileContent">
             <Typography className='titleSpan' style={{fontWeight: "Bold"}}>Lehman College, CUNY</Typography>
               <Typography variant='caption'>
-                Jan 2022- June 2024
+                Jan 2021- June 2023
               </Typography>
               <p className='ProData'>Computer Science</p>
               </TimelineContent>
@@ -106,7 +106,7 @@ const Resume = () => {
             <TimelineContent className="profileContent">
             <Typography className='titleSpan' style={{fontWeight: "Bold"}}>Borough Of Manhattan Community College</Typography>
               <Typography variant='caption'>
-                Jan 2020- June 2022
+                Jan 2018- June 2020
               </Typography>
               <p className='ProData'>Liberal Arts</p>
             </TimelineContent>
