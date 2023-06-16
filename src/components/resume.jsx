@@ -108,7 +108,7 @@ const Resume = () => {
               <Typography variant='caption'>
                 Jan 2018- June 2020
               </Typography>
-              <p className='ProData'>Liberal Arts</p>
+              <p className='ProData'>Computer Science</p>
             </TimelineContent>
           </TimelineItem>
         </Timeline>
