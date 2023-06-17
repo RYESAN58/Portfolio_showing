@@ -50,19 +50,6 @@ const Resume = () => {
           <TimelineItem>
             <TimelineSeparator className='sep-pad'>
               <TimelineDot className='tdot' />
-              <TimelineConnector className='Connect' />
-            </TimelineSeparator  >
-            <TimelineContent className="profileContent">
-            <Typography className='titleSpan' style={{fontWeight: "Bold"}}>College Tutor</Typography>
-              <Typography variant='caption'>
-                2022-Present
-              </Typography>
-              <p className='ProData'>Tutor ambitious students in progamming techniques and methods.</p>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineSeparator className='sep-pad'>
-              <TimelineDot className='tdot' />
               {/* <TimelineConnector className='Connect' /> */}
             </TimelineSeparator>
             <TimelineContent className="profileContent">
@@ -71,6 +58,36 @@ const Resume = () => {
                 Nov 2021- June 2022
               </Typography>
               <p className='ProData'>Immersive Full-Stack training program in Python/Flask and MERN</p>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator className='sep-pad'>
+              <TimelineDot className='tdot' />
+              <TimelineConnector className='Connect' />
+            </TimelineSeparator  >
+            <TimelineContent className="profileContent">
+            <Typography className='titleSpan' style={{fontWeight: "Bold"}}>Department of Education Tech intern</Typography>
+              <Typography variant='caption'>
+                August 2022 - May 2023
+              </Typography>
+              <p className='ProData'>
+                Managed and updated school website with relevant content, provided technical support, assisted with IT inventory management, collaborated with stakeholders, developed proficiency in CMS and web development tools, enhanced organizational skills, cultivated communication and teamwork skills, gained valuable hands-on experience in a technical role in an educational setting.
+              </p>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator className='sep-pad'>
+              <TimelineDot className='tdot' />
+              <TimelineConnector className='Connect' />
+            </TimelineSeparator  >
+            <TimelineContent className="profileContent">
+            <Typography className='titleSpan' style={{fontWeight: "Bold"}}>Crafted - the social proof solution for food & beverage · Full-time</Typography>
+              <Typography variant='caption'>
+                May 20223 - Present
+              </Typography>
+              <p className='ProData'>
+                Developed and maintained software components for a web application using the MERN stack. Collaborated with cross-functional teams to gather requirements and design software solutions. Implemented unit tests and participated in code reviews to ensure code quality. Improved application performance through optimization and caching strategies. Assisted in database design and implementation. Utilized version control systems and researched new technologies. Contributed to technical documentation and followed agile development methodologies. Demonstrated strong problem-solving skills and resolved software defects.
+              </p>
             </TimelineContent>
           </TimelineItem>
         </Timeline>
