@@ -214,10 +214,10 @@ const Porfolio = () => {
           </Dialog>
         </div>
         <div>
-          <Dialog open={open} onClose={()=> setOpen4(false)} className='projectD'>
+          <Dialog open={open4} onClose={()=> setOpen4(false)} className='projectD'>
             <DialogTitle>PhotoCred MERN app</DialogTitle>
             <a href="https://doctorhelp.onrender.com/" target='_blank'>
-              <img src={require('../Photos/photocred.png')} className='hover projectDPhoto' style={{height:'250px'}}/>
+              <img src={require('../Photos/docHelp.png')} className='hover projectDPhoto' style={{height:'250px'}}/>
             </a>
             <DialogContent className='projectDDescription'>
               With this project I created an app where users can create events where anyone can post pictures of event. this app was created using REACT, Express, MongoDB, Node.JS. With this app I really wanted to show how I can make a complex backend as well as using third party pps like aws's s3 and I also used Google Maps api so users can see the exact location's of the event. 
