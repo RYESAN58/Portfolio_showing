@@ -118,7 +118,7 @@ const Porfolio = () => {
                 <Grow in timeout={1000}>
                   <Card onClick={()=>setOpen4(true)}>
                     <CardActionArea>
-                      <CardMedia className='customCard' component="img" image={require('../Photos/photocred.png')} title="Doctor's Help" height="100"/>
+                      <CardMedia className='customCard' component="img" image={require('../Photos/docHelp.png')} title="Doctor's Help" height="100"/>
                       <CardContent>
                         <Typography className='customCard_title'>
                           Doctor's Help via Hack Diversity
