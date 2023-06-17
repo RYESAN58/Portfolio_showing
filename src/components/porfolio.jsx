@@ -23,6 +23,7 @@ const Porfolio = () => {
   const [open, setOpen]= useState(false)
   const [open2, setOpen2]= useState(false)
   const [open3, setOpen3]= useState(false)
+  const [open4, setOpen4]= useState(false)
 
 
 
@@ -111,6 +112,27 @@ const Porfolio = () => {
                 </Grid>:
                 ""
                 }
+                {
+              tabValue === 'React' || tabValue == 'All' ?
+              <Grid item>
+                <Grow in timeout={1000}>
+                  <Card onClick={()=>setOpen4(true)}>
+                    <CardActionArea>
+                      <CardMedia className='customCard' component="img" image={require('../Photos/photocred.png')} title="Doctor's Help" height="100"/>
+                      <CardContent>
+                        <Typography className='customCard_title'>
+                          Doctor's Help via Hack Diversity
+                        </Typography>
+                        <Typography className='customCard_desc' variant='body2'>
+                          an app that helps doctor keep trakc of thier patients X Rays 
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Grow>
+                </Grid>:
+                ""
+              }
             {/* <Grid item>
               <Grow in timeout={1000}>
                 <Card>
@@ -186,6 +208,25 @@ const Porfolio = () => {
                 <GitHub className='iconss' />
               </a>
               <a href="http://54.210.47.144/" target="_blank">
+                <LanguageIcon className='iconss'/>
+              </a>
+            </DialogActions>
+          </Dialog>
+        </div>
+        <div>
+          <Dialog open={open} onClose={()=> setOpen4(false)} className='projectD'>
+            <DialogTitle>PhotoCred MERN app</DialogTitle>
+            <a href="https://doctorhelp.onrender.com/" target='_blank'>
+              <img src={require('../Photos/photocred.png')} className='hover projectDPhoto' style={{height:'250px'}}/>
+            </a>
+            <DialogContent className='projectDDescription'>
+              With this project I created an app where users can create events where anyone can post pictures of event. this app was created using REACT, Express, MongoDB, Node.JS. With this app I really wanted to show how I can make a complex backend as well as using third party pps like aws's s3 and I also used Google Maps api so users can see the exact location's of the event. 
+            </DialogContent>
+            <DialogActions className='projectDActions'>
+              <a href="https://github.com/The-Ops-HD/Doctor-Help" target="_blank">
+                <GitHub className='iconss' />
+              </a>
+              <a href="https://doctorhelp.onrender.com/" target="_blank">
                 <LanguageIcon className='iconss'/>
               </a>
             </DialogActions>
